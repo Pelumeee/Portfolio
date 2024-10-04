@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 
-const Button = ({ bg = "blue", color = "white", border = "none", padding = "none", children, to = "/" }) => {
+const Button = ({ bg = "blue", color = "white", border = "none", padding = "none", children, to = "/", clname="" }) => {
     const style = {
         fontSize: "18px",
         lineHeight: "28px",
@@ -13,9 +13,10 @@ const Button = ({ bg = "blue", color = "white", border = "none", padding = "none
         cursor: "pointer",
         transition: "background-color 0.3s ease",
     };
+    console.log(clname);
 
     return (
-        <NavLink to={to} style={style}>
+        <NavLink className={clname.includes('/work') ? 'active' : ''} to={to} style={style}>
             {children}
         </NavLink>
     );

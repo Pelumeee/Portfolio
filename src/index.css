@@ -102,6 +102,10 @@ ul a.active li{
   background-color: #000;
   color:white;
 }
+.work a.active{
+  background-color: #000 !important;
+  color: #fefefe !important;
+}
 
 @keyframes bounce {
     0%,
