@@ -28,7 +28,6 @@ const Index = () => {
                     </div>
                 </div>
                 <Outlet />
-
             </section>
         </main>
     );

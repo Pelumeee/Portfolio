@@ -5,6 +5,9 @@ import Work from "./pages/Work";
 import CaseStudy from "./pages/CaseStudy";
 import SocialMedia from "./pages/SocialMedia";
 import About from "./pages/About";
+import Terragon from "./pages/Terragon";
+import MTN from "./pages/MTN";
+import Vitse from "./pages/Vitse";
 
 function App() {
     return (
@@ -17,6 +20,9 @@ function App() {
                     <Route path="case-study" element={<CaseStudy />} />
                     <Route path="social-media" element={<SocialMedia />} />
                 </Route>
+                <Route path="work/terragon" element={<Terragon />} />
+                <Route path="work/mtn" element={<MTN />} />
+                <Route path="work/vitse" element={<Vitse />} />
                 <Route path="about" element={<About />} />
             </Route>
         </Routes>

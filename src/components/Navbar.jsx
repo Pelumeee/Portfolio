@@ -24,7 +24,7 @@ const Navbar = () => {
                 </NavLink>
                 <ul className="flex items-center gap-4 bg-[#F5F6F8] rounded-[100px] py-2.5 px-3">
                     <NavLink to={"/home"} className={location.pathname === '/' ? 'active' : ''}>
-                        <li className="text-[#87898D] font-medium py-2.5 px-10 rounded-[100px]">Home</li>
+                        <li className="text-[#87898D] font-medium py-2.5 px-10 rounded-[100px]">home</li>
                     </NavLink>
                     <NavLink to={"/work"}>
                         <li className="text-[#87898D] font-medium py-2.5 px-10 rounded-[100px]">work</li>

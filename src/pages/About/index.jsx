@@ -14,7 +14,7 @@ const Index = () => {
     return (
         <main className="relative w-full mt-[125px] min-h-[90vh]">
             <section className="w-full bg-white flex flex-col items-center">
-                <div className="lg:w-[70%] w-[90%] flex items-center justify-between text-[#000] pt-28">
+                <div className="lg:w-[70%] w-[90%] flex items-center justify-between text-[#000] pt-16">
                     <div>
                         <h1 className="syne text-[75px] font-bold leading-[90px] my-4">About Me</h1>
                         <p className="text-lg leading-8 max-w-[50rem] mb-6 mt-2">
