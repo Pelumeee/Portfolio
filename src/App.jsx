@@ -7,7 +7,7 @@ import SocialMedia from "./pages/SocialMedia";
 import About from "./pages/About";
 import Terragon from "./pages/Terragon";
 import MTN from "./pages/MTN";
-import Vitse from "./pages/Vitse";
+// import Vitse from "./pages/Vitse";
 import Cloud from "./pages/Cloud";
 
 function App() {
@@ -23,7 +23,7 @@ function App() {
                 </Route>
                 <Route path="work/terragon" element={<Terragon />} />
                 <Route path="work/mtn" element={<MTN />} />
-                <Route path="work/vitse" element={<Vitse />} />
+                {/* <Route path="work/vitse" element={<Vitse />} /> */}
                 <Route path="work/cloud-marketing" element={<Cloud />} />
                 <Route path="about" element={<About />} />
             </Route>
