@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 
-const Button = ({ bg = "black", color = "white", border = "none", padding = "none", children, to = "/", clname="" }) => {
+const Button = ({ bg = "black", color = "white", border = "none", padding = "none", children, to = "/", clname="", radius = "12px" }) => {
     const style = {
         fontSize: "18px",
         lineHeight: "28px",
@@ -8,7 +8,7 @@ const Button = ({ bg = "black", color = "white", border = "none", padding = "non
         color: color,
         border: border,
         padding: padding,
-        borderRadius: "12px",
+        borderRadius: radius,
         textDecoration: "none",
         cursor: "pointer",
         transition: "background-color 0.3s ease",

@@ -5,7 +5,7 @@ import Screens from "../../components/Screens";
 const Index = () => {
     return (
         <main className="relative w-full mt-[125px] min-h-[90vh]">
-            <WorkDetailsHero bg="#f4f7fe" title="Designing a marketing site for Terragon’s SaaS products" image="/images/terragon/one.png" />
+            <WorkDetailsHero bgColor="#F4F7FE" title="Designing a marketing site for Terragon’s SaaS products" image="/images/terragon/one.png" />
 
             <section className="w-full bg-[#Fff] flex flex-col items-center py-10">
                 <div className="lg:w-[70%] w-[90%]">
@@ -116,7 +116,7 @@ const Index = () => {
             </section>
             <section className="w-full bg-[#fff] flex flex-col items-center">
                 <div className="lg:w-[70%] w-[90%] py-24 flex justify-center items-center">
-                    <Button bg="#191C22" color="white" padding="0.7rem 6rem">
+                    <Button bg="#191C22" color="white" padding="0.7rem 6rem" radius="6px">
                         View More
                     </Button>
                 </div>

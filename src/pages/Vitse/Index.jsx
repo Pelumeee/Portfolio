@@ -91,7 +91,7 @@ const Index = () => {
             </section>
             <section className="w-full bg-[#fff] flex flex-col items-center">
                 <div className="lg:w-[70%] w-[90%] py-24 flex justify-center items-center">
-                    <Button bg="#191C22" color="white" padding="0.7rem 6rem">
+                    <Button bg="#191C22" color="white" padding="0.7rem 6rem" radius="6px">
                         View More
                     </Button>
                 </div>

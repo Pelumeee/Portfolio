@@ -4,7 +4,7 @@ const WorkDetailsHero = ({ bgColor = "#fff", image, title }) => {
     const navigate = useNavigate();
 
     return (
-        <section className={`w-full bg-[${bgColor}] flex flex-col items-center`}>
+        <section className="w-full flex flex-col items-center" style={{ backgroundColor: bgColor }}>
             <div onClick={() => navigate("/work")} className="lg:w-[70%] w-[90%] py-10 flex items-center gap-3 cursor-pointer">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clipPath="url(#clip0_103_216)">
@@ -27,13 +27,13 @@ const WorkDetailsHero = ({ bgColor = "#fff", image, title }) => {
                 <span className="text-[#191C22] font-medium">Back</span>
             </div>
 
-            <div className="lg:w-[70%] w-[90%] flex justify-between py-8 gap-8">
+            <div className="lg:w-[70%] w-[90%] flex justify-between pt-6 pb-32 gap-8">
                 <div>
                     <h1 className="inline-block text-[#86898F] font-medium text-xs leading-3 border border-[#86898F] rounded-[10px] p-3">UI/UX CASE STUDY</h1>
                     <p className="syne font-bold text-[40px] leading-[48px] max-w-[50rem] mt-2 text-[#191C22]">{title}</p>
                 </div>
                 <div className="max-w-[685px]">
-                    <img src={image} alt="" className="w-full"/>
+                    <img src={image} alt="" className="w-full" />
                 </div>
             </div>
         </section>

@@ -1,11 +1,16 @@
 import { NavLink, useLocation } from "react-router-dom";
+import { useState } from "react";
 
 const Navbar = () => {
     const location = useLocation();
-    
+    const [showMenu, setShowMenu] = useState(false);
+
+    const handleToggleMenu = () => {
+        setShowMenu(!showMenu);
+    };
     return (
         <header className="w-full flex justify-center bg-[#fff] border-b border-[#F2F2F2] fixed z-[100]">
-            <nav className="lg:w-[70%] w-[90%] flex items-center justify-between py-8">
+            <nav className="relative lg:w-[70%] w-[90%] flex items-center justify-between py-8">
                 <NavLink to={"/"}>
                     <div>
                         <svg width="119" height="47" viewBox="0 0 119 47" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -23,7 +28,7 @@ const Navbar = () => {
                     </div>
                 </NavLink>
                 <ul className="flex items-center gap-4 bg-[#F5F6F8] rounded-[100px] py-2.5 px-3">
-                    <NavLink to={"/home"} className={location.pathname === '/' ? 'active' : ''}>
+                    <NavLink to={"/home"} className={location.pathname === "/" ? "active" : ""}>
                         <li className="text-[#87898D] font-medium py-2.5 px-10 rounded-[100px]">home</li>
                     </NavLink>
                     <NavLink to={"/work"}>
@@ -33,7 +38,7 @@ const Navbar = () => {
                         <li className="text-[#87898D] font-medium py-2.5 px-10 rounded-[100px]">about</li>
                     </NavLink>
                 </ul>
-                <div className="flex items-center gap-3 bg-[#F5F6F8] rounded-[100px] py-5 px-8">
+                <div onClick={handleToggleMenu} className="flex items-center gap-3 bg-[#F5F6F8] rounded-[100px] py-5 px-8 cursor-pointer">
                     <p className="text-[#060607] font-medium leading-7">Connect</p>
                     <svg width="11" height="6" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -42,6 +47,18 @@ const Navbar = () => {
                         />
                     </svg>
                 </div>
+                {showMenu && (
+                    <div className="absolute right-[0] top-[55%] flex flex-col gap-3 bg-[#F5F6F8] rounded-b-[30px] py-8 px-8">
+                        <div className="flex items-center justify-between border-t border-[#E6E8EB] pt-2">
+                            <p className="text-[#060607] font-medium leading-7">Email</p>
+                            <img src="/images/email.png" alt="" className="w-[24px] h-[24px]" />
+                        </div>
+                        <div className="flex items-center justify-between">
+                            <p className="text-[#060607] font-medium leading-7">LinkedIn</p>
+                            <img src="/images/Linkedin.png" alt="" className="w-[24px] h-[24px]" />
+                        </div>
+                    </div>
+                )}
             </nav>
         </header>
     );
