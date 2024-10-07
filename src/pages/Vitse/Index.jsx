@@ -2,7 +2,7 @@ import Button from "../../components/Button";
 import WorkDetailsHero from "../../components/WorkDetailsHero";
 import Screens from "../../components/Screens";
 
-const index = () => {
+const Index = () => {
     return (
         <main className="relative w-full mt-[125px] min-h-[90vh]">
             <WorkDetailsHero bgColor="#EDFCF6" title="Designing vitse technology site for insurance businesses" image="/images/vitse/one.png" />
@@ -100,4 +100,4 @@ const index = () => {
     );
 };
 
-export default index;
+export default Index;
