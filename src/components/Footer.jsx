@@ -1,10 +1,11 @@
+import { Link } from "react-router-dom";
 const Footer = () => {
     return (
         <footer className="w-full bg-[#191C22] border-t border-[#323944] py-6 flex justify-center">
-            <div className="lg:w-[70%] w-[90%] flex items-center justify-between">
+            <div className="lg:w-[70%] w-[90%] flex sm:flex-row flex-col sm:items-center justify-between">
                 <div className="text-white">
                     <h1 className="font-semibold text-xl leading-8">Need a hand?</h1>
-                    <div className="flex items-center gap-10">
+                    <div className="flex sm:flex-row flex-col sm:items-center sm:gap-10 gap-3">
                         <p className="font-light leading-7">Connect with me</p>
                         <div className="flex items-center gap-6">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -42,10 +43,16 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
-                <ul className="flex items-center gap-10 text-white">
-                    <li>home</li>
-                    <li>work</li>
-                    <li>about</li>
+                <ul className="flex items-center sm:gap-10 gap-6 text-white mt-6 sm:mt-0">
+                    <Link to="/">
+                        <li>home</li>
+                    </Link>
+                    <Link to="/work">
+                        <li>work</li>
+                    </Link>
+                    <Link to="/about">
+                        <li>about</li>
+                    </Link>
                 </ul>
             </div>
         </footer>

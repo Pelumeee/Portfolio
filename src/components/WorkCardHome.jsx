@@ -3,13 +3,13 @@ import { Link } from "react-router-dom";
 const WorkCard = ({ cardName, cardImg, cardDescription, path = "" }) => {
     return (
         <Link to={path}>
-            <div className="projectCards rounded-[40px] border border-[#353C48] min-h-[440px] p-5">
-                <div className="relative overflow-hidden rounded-[20px]">
+            <div className="projectCards rounded-[40px] border border-[#353C48]  md:p-5 p-2">
+                <div className="relative h-full overflow-hidden rounded-[20px]">
                     <img className="imgScale object-cover w-full h-full" src={cardImg} alt="" />
-                    <div className="absolute h-[120px] w-full flex items-center justify-between bg-[#191C2299] bottom-0 py-8 px-10">
+                    <div className="absolute h-[120px] w-full flex items-center justify-between bg-[#191C2299] bottom-0 md:py-8 py-2 md:px-10 px-4">
                         <div className="text-white text-left">
-                            <h1 className="text-xl font-bold leading-7">{cardName}</h1>
-                            <p className="text-sm leading-7 max-w-[30rem]">{cardDescription}</p>
+                            <h1 className="md:text-xl text-sm font-bold leading-7">{cardName}</h1>
+                            <p className="md:text text-xs  leading-7 max-w-[30rem]">{cardDescription}</p>
                         </div>
                         <svg className="arrow" width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path

@@ -7,7 +7,7 @@ const Button = ({ bg = "black", color = "white", border = "none", padding = "non
         backgroundColor: bg,
         color: color,
         border: border,
-        padding: padding,
+        paddingBlock: padding,
         borderRadius: radius,
         textDecoration: "none",
         cursor: "pointer",
@@ -16,7 +16,7 @@ const Button = ({ bg = "black", color = "white", border = "none", padding = "non
     console.log(clname);
 
     return (
-        <NavLink className={clname.includes('/work') ? 'active' : ''} to={to} style={style}>
+        <NavLink className="w-full md:max-w-[220px] text-center" to={to} style={style}>
             {children}
         </NavLink>
     );

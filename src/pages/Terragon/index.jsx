@@ -4,12 +4,12 @@ import Screens from "../../components/Screens";
 
 const Index = () => {
     return (
-        <main className="relative w-full mt-[125px] min-h-[90vh]">
+        <main className="w-full sm:mt-[125px] mt-[63px] min-h-[90vh]">
             <WorkDetailsHero bgColor="#F4F7FE" title="Designing a marketing site for Terragon’s SaaS products" image="/images/terragon/one.png" />
 
             <section className="w-full bg-[#Fff] flex flex-col items-center py-10">
                 <div className="lg:w-[70%] w-[90%]">
-                    <div className="grid grid-cols-2 gap-10 mb-6">
+                    <div className="grid lg:grid-cols-2 grid-cols-1 gap-10 mb-6">
                         <div>
                             <h1 className="text-[#191C22] font-semibold leading-7 text-2xl mb-4">Overview</h1>
                             <p className="text-[#5A6067] font-medium leading-8 text-sm">
@@ -58,7 +58,7 @@ const Index = () => {
                     </div>
                     <div className="mb-6">
                         <h1 className="text-[#191C22] font-semibold leading-7 text-2xl mb-4">Style Guide</h1>
-                        <div className="grid grid-cols-2">
+                        <div className="grid lg:grid-cols-2 grid-cols-1">
                             <div>
                                 <p className="text-[#5A6067] font-medium leading-8 text-sm mb-4">colors</p>
                                 <div>
@@ -81,7 +81,7 @@ const Index = () => {
                     </div>
                     <div className="mb-6">
                         <h1 className="text-[#191C22] font-semibold leading-7 text-2xl mb-4">Screens</h1>
-                        <div className="grid grid-cols-2 gap-x-14 gap-y-6">
+                        <div className="grid lg:grid-cols-2  grid-cols-1 gap-x-14 gap-y-6">
                             <Screens title="Home" image="/images/terragon/screen1.png" />
                             <Screens title="About" image="/images/terragon/screen2.png" />
                             <Screens title="Contact" image="/images/terragon/screen3.png" />
@@ -92,7 +92,7 @@ const Index = () => {
             <section className="w-full bg-[#E7EFF5] flex flex-col items-center">
                 <div className="lg:w-[70%] w-[90%] py-10">
                     <h1 className="text-[#191C22] font-semibold leading-7 text-2xl mb-4">More screens...</h1>
-                    <div className="grid grid-cols-3 gap-3">
+                    <div className="grid lg:grid-cols-3 grid-cols-1 gap-3">
                         <div className="">
                             <img src="/images/terragon/more1.png" alt="" className="w-full h-full" />
                         </div>
@@ -116,7 +116,7 @@ const Index = () => {
             </section>
             <section className="w-full bg-[#fff] flex flex-col items-center">
                 <div className="lg:w-[70%] w-[90%] py-24 flex justify-center items-center">
-                    <Button bg="#191C22" color="white" padding="0.7rem 6rem" radius="6px">
+                    <Button bg="#191C22" color="white" padding="0.7rem" radius="6px">
                         View More
                     </Button>
                 </div>

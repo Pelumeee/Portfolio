@@ -107,6 +107,12 @@ ul a.active li{
   color: #fefefe !important;
 }
 
+.subMenu ul a.active li{
+    font-weight: 700;
+    background-color: white;
+    color: #00BA70 !important;
+}
+
 @keyframes bounce {
     0%,
     100% {
@@ -116,3 +122,17 @@ ul a.active li{
         transform: translateY(25px);
     }
 }
+
+@media (max-width: 1400px) {
+    .stickyContainer {
+        position: static;
+        top: 0;
+    }
+
+}
+/* @media (max-width: 450px) {
+   .projectCard{
+    height: 250px !important;
+   }
+
+} */
