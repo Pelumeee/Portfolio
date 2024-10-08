@@ -8,7 +8,7 @@ const WorkCard = ({ cardName, cardImg, cardDescription, path = "" }) => {
                     <img className="imgScale object-cover w-full h-full" src={cardImg} alt="" />
                     <div className="absolute h-[120px] w-full flex items-center justify-between bg-[#191C2299] bottom-0 md:py-8 py-2 md:px-10 px-4">
                         <div className="text-white text-left">
-                            <h1 className="md:text-xl text-sm font-bold leading-7">{cardName}</h1>
+                            <h1 className="syne md:text-xl text-sm font-bold leading-7">{cardName}</h1>
                             <p className="md:text text-xs  leading-7 max-w-[30rem]">{cardDescription}</p>
                         </div>
                         <svg className="arrow" width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">

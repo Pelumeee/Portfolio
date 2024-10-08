@@ -1,5 +1,5 @@
 import WorksContainer from "../../components/WorksContainer";
-import WorkCard from "../../components/WorkCardWork";
+import WorkCard from "../../components/WorkCardSocialMedia";
 
 const CaseStudy = () => {
     return (

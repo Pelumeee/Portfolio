@@ -8,7 +8,7 @@ const Index = () => {
     };
 
     const handleMouseLeave = () => {
-        setImgurl("/images/tobi2.png");
+        setImgurl("/images/tobi1.png");
     };
 
     return (
@@ -36,14 +36,14 @@ const Index = () => {
                     </div>
                     <div onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} className="flex flex-col items-center order-1 lg:order-2">
                         <h1 className="lg:hidden block syne md:text-[75px] text-[50px] font-bold md:leading-[90px] leading-[60px] md:my-4">About Me</h1>
-                        <img src={imgurl} alt="profilePicture" />
+                        <img src={imgurl} alt="profilePicture" className=""/>
                     </div>
                 </div>
-                <div className="lg:w-[70%] w-[90%] flex sm:flex-row flex-col  sm:border border-[#DDDDDE] rounded-[8px] min-h-[150px] my-10">
-                    <div className="sm:w-[20%] w-full sm:border-r border-[#DDDDDE] sm:px-14 min-h-[150px] flex items-center sm:justify-center">
-                        <p className="text-[#000] font-bold leading-7 text-lg">Some brands I’ve worked with</p>
+                <div className="lg:w-[70%] w-[90%] flex md:flex-row flex-col  md:border border-[#DDDDDE] rounded-[8px] min-h-[150px] my-10">
+                    <div className="md:w-[30%] w-full md:border-r border-[#DDDDDE] min-h-[150px] flex items-center sm:justify-center">
+                        <p className="syne text-[#000] font-bold leading-7 text-lg">Some brands I’ve worked with</p>
                     </div>
-                    <ul className="sm:w-[80%] w-full grid sm:grid-cols-5 grid-cols-2 gap-14">
+                    <ul className="md:w-[70%] w-full grid md:grid-cols-5 grid-cols-2 gap-14 sm:px-14">
                         <li className="flex justify-center items-center">
                             <svg width="127" height="41" viewBox="0 0 127 41" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
