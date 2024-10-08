@@ -22,7 +22,7 @@ const Index = () => {
                             <p className="text-[#5A6067] font-medium leading-8 text-sm">
                                 My role was to make the platform user-friendly and visually appealing. I focused on creating a smooth experience for both small businesses and their customers. I spent
                                 my days choosing colours, designing buttons and forms, and making sure everything looked good and worked well on different phones and tablets. I also worked closely
-                                with the tech team, explaining how I wanted things to look and function. It was important for me to create a design that not only looked great but also reflected MTN's
+                                with the tech team, explaining how I wanted things to look and function. It was important for me to create a design that not only looked great but also reflected MTN&apos;s
                                 brand identity. I paid special attention to making sure the platform was easy to use for everyone, including people with disabilities. My goal was to create a platform
                                 that not only met the needs of our users but also provided a pleasant and inclusive experience for everyone involved.
                             </p>

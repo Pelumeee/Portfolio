@@ -7,7 +7,7 @@ import SocialMedia from "./pages/SocialMedia";
 import About from "./pages/About";
 import Terragon from "./pages/Terragon";
 import MTN from "./pages/MTN";
-import Vitse from "./pages/vitse";
+import Vitse from "./pages/vitse/Vitse";
 import Cloud from "./pages/Cloud";
 
 function App() {
