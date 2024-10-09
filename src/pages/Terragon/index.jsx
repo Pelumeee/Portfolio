@@ -38,7 +38,8 @@ const Index = () => {
                         </p>
                     </div>
                     <div>
-                        <img src="/images/terragon/two.png" alt="" className="max-w-[407px] max-h-[351px]" />
+                        <img src="/images/terragon/two.png" alt="" className="hidden sm:block max-w-[407px] max-h-[351px]" />
+                        <img src="/images/terragon/two.png" alt="" className="sm:hidden w-[300px] max-h-[351px]" />
                     </div>
                     <div className="mb-6">
                         <h2 className="text-[#5A6067] font-semibold leading-7 text-sm">Heuristic Study</h2>
@@ -62,7 +63,8 @@ const Index = () => {
                             <div>
                                 <p className="text-[#5A6067] font-medium leading-8 text-sm mb-4">colors</p>
                                 <div>
-                                    <img src="/images/terragon/three.png" alt="" className="max-w-[440px] max-h-[252px]" />
+                                    <img src="/images/terragon/three.png" alt="" className="hidden sm:block max-w-[440px] max-h-[252px]" />
+                                    <img src="/images/terragon/imgSmall.png" alt="" className="sm:hidden max-w-[440px] max-h-[252px]" />
                                 </div>
                             </div>
                             <div>

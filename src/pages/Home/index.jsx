@@ -27,7 +27,7 @@ const Index = () => {
                         </div>
                         <div className="lg:order-2 order-1 flex flex-col items-center justify-center">
                             <p className="md:hidden text-3xl font-medium mb-2">Ogunyinka Oluwatobi</p>
-                            <img src="/images/tobi1.png" alt="profilePicture" className="max-w-[400px] max-h-[400px]"/>
+                            <img src="/images/tobi1.png" alt="profilePicture" className="w-[400px] max-h-[400px]"/>
                         </div>
                     </div>
                     <div className="w-full flex justify-center h-[10rem]">

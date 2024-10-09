@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 const Index = () => {
-    const [imgurl, setImgurl] = useState("/images/tobi2.png");
+    const [imgurl, setImgurl] = useState("/images/tobi1.png");
 
     const handleMouseEnter = () => {
         setImgurl("/images/tobi.png");
@@ -36,7 +36,7 @@ const Index = () => {
                     </div>
                     <div onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} className="flex flex-col items-center order-1 lg:order-2">
                         <h1 className="lg:hidden block syne md:text-[75px] text-[50px] font-bold md:leading-[90px] leading-[60px] md:my-4">About Me</h1>
-                        <img src={imgurl} alt="profilePicture" className=""/>
+                        <img src={imgurl} alt="profilePicture" className="w-[400px]"/>
                     </div>
                 </div>
                 <div className="lg:w-[70%] w-[90%] flex md:flex-row flex-col  md:border border-[#DDDDDE] rounded-[8px] min-h-[150px] my-10">

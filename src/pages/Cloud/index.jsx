@@ -4,12 +4,12 @@ import Screens from "../../components/Screens";
 
 const Index = () => {
     return (
-        <main className="relative w-full mt-[125px] min-h-[90vh]">
+        <main className="relative w-full lg:mt-[125px] mt-[60px] min-h-[90vh]">
             <WorkDetailsHero bgColor="#F7FBFF" title="Designing a multinational cloud-based marketing solution" image="/images/cloud/one.png" />
 
             <section className="w-full bg-[#Fff] flex flex-col items-center py-10">
                 <div className="lg:w-[70%] w-[90%]">
-                    <div className="grid grid-cols-2 gap-10 mb-24">
+                    <div className="grid lg:grid-cols-2 grid-cols-1 gap-10 mb-24">
                         <div>
                             <h1 className="text-[#191C22] font-semibold leading-7 text-2xl mb-4">Overview</h1>
                             <p className="text-[#5A6067] font-medium leading-8 text-sm">
@@ -48,17 +48,17 @@ const Index = () => {
 
                     <div className="mb-24 p-10 border-[10px] border-[#EEFFF8] overflow-hidden">
                         <h1 className="text-[#191C22] font-semibold leading-7 text-2xl px-14">Illustrations</h1>
-                        <div className="grid grid-cols-4 py-10">
-                            <div className="flex flex-col items-center justify-center border-r border-[#ECF2EFCC] py-16">
+                        <div className="grid 2xl:grid-cols-4 md:grid-cols-2 grid-cols-1 py-10">
+                            <div className="flex flex-col items-center justify-center lg:border-r border-[#ECF2EFCC] py-16">
                                 <img src="/images/cloud/Segment.svg" alt="" className="max-w-[195px] mb-6"/>
                                 <span className="text-[#5A6067] leading-7">Segment</span>
                             </div>
-                            <div className="flex flex-col items-center justify-center border-r border-[#ECF2EFCC] py-16">
+                            <div className="flex flex-col items-center justify-center lg:border-r border-[#ECF2EFCC] py-16">
                                 <img src="/images/cloud/New user.svg" alt="" className="max-w-[195px] mb-6"/>
                                 <span className="text-[#5A6067] leading-7">Profile</span>
 
                             </div>
-                            <div className="flex flex-col items-center justify-center border-r border-[#ECF2EFCC] py-16">
+                            <div className="flex flex-col items-center justify-center lg:border-r border-[#ECF2EFCC] py-16">
                                 <img src="/images/cloud/Reward.svg" alt="" className="max-w-[195px] mb-6"/>
                                 <span className="text-[#5A6067] leading-7">Rewards</span>
 
@@ -73,7 +73,7 @@ const Index = () => {
 
                     <div className="mb-6">
                         <h1 className="text-[#191C22] font-semibold leading-7 text-2xl mb-4">Screens</h1>
-                        <div className="grid grid-cols-2 gap-x-14 gap-y-6">
+                        <div className="grid lg:grid-cols-2 grid-cols-1 gap-x-14 gap-y-6">
                             <Screens title="Log In" image="/images/cloud/screen1.png" />
                             <Screens title="Reset Password" image="/images/cloud/screen2.png" />
                             <Screens title="New Password" image="/images/cloud/screen3.png" />
@@ -89,7 +89,7 @@ const Index = () => {
             </section>
             <section className="w-full bg-[#fff] flex flex-col items-center">
                 <div className="lg:w-[70%] w-[90%] py-24 flex justify-center items-center">
-                    <Button bg="#191C22" color="white" padding="0.7rem 6rem" radius="6px">
+                    <Button bg="#191C22" color="white" padding="0.7rem" radius="6px">
                         View More
                     </Button>
                 </div>

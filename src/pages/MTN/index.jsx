@@ -4,7 +4,7 @@ import Screens from "../../components/Screens";
 
 const Index = () => {
     return (
-        <main className="relative w-full mt-[125px] min-h-[90vh]">
+        <main className="relative w-full sm:mt-[125px] mt-[65px] min-h-[90vh]">
             <WorkDetailsHero bgColor="#FFFDF4" title="Designing a simplified mobile advertising platform" image="/images/mtn/one.png" />
 
             <section className="w-full bg-[#Fff] flex flex-col items-center py-10">
@@ -35,7 +35,8 @@ const Index = () => {
                             <div>
                                 <p className="text-[#5A6067] font-medium leading-8 text-sm mb-4">Primary Brand Colors</p>
                                 <div>
-                                    <img src="/images/mtn/two.png" alt="" className="max-w-[200px] max-h-[116px]" />
+                                    <img src="/images/mtn/two.png" alt="" className="hidden sm:block max-w-[200px] max-h-[116px]" />
+                                    <img src="/images/mtn/two.png" alt="" className="sm:hidden w-[200px] max-h-[116px]" />
                                 </div>
                             </div>
                             <div>
@@ -47,25 +48,29 @@ const Index = () => {
                             <div>
                                 <p className="text-[#5A6067] font-medium leading-8 text-sm mb-4">Color Palettes (Gray)</p>
                                 <div>
-                                    <img src="/images/mtn/three.png" alt="" className="max-w-[440px] max-h-[430px]" />
+                                    <img src="/images/mtn/three.png" alt="" className="hidden sm:block max-w-[440px] max-h-[430px]" />
+                                    <img src="/images/mtn/threeSm.png" alt="" className="sm:hidden w-[300px] max-h-[430px]" />
                                 </div>
                             </div>
                             <div>
                                 <p className="text-[#5A6067] font-medium leading-8 text-sm mb-4">Color Palettes (Error)</p>
                                 <div>
-                                    <img src="/images/mtn/four.png" alt="" className="max-w-[440px] max-h-[430px]" />
+                                    <img src="/images/mtn/four.png" alt="" className="hidden sm:block max-w-[440px] max-h-[430px]" />
+                                    <img src="/images/mtn/fourSm.png" alt="" className="sm:hidden w-[300px] max-h-[430px]" />
                                 </div>
                             </div>
                             <div>
                                 <p className="text-[#5A6067] font-medium leading-8 text-sm mb-4">Color Palettes (Warning)</p>
                                 <div>
-                                    <img src="/images/mtn/five.png" alt="" className="max-w-[440px] max-h-[430px]" />
+                                    <img src="/images/mtn/five.png" alt="" className="hidden sm:block max-w-[440px] max-h-[430px]" />
+                                    <img src="/images/mtn/fiveSm.png" alt="" className="sm:hidden w-[300px] max-h-[430px]" />
                                 </div>
                             </div>
                             <div>
                                 <p className="text-[#5A6067] font-medium leading-8 text-sm mb-4">Color Palettes (Success)</p>
                                 <div>
-                                    <img src="/images/mtn/six.png" alt="" className="max-w-[440px] max-h-[430px]" />
+                                    <img src="/images/mtn/six.png" alt="" className="hidden sm:block max-w-[440px] max-h-[430px]" />
+                                    <img src="/images/mtn/sixSm.png" alt="" className="sm:hidden w-[300px] max-h-[430px]" />
                                 </div>
                             </div>
                             <div>
@@ -73,15 +78,18 @@ const Index = () => {
                                 <div className="flex flex-col gap-2">
                                     <div>
                                         <p className="text-[#5A6067] font-semibold leading-7 text-sm">Success</p>
-                                        <img src="/images/mtn/seven.png" alt="" className="max-w-[363px]" />
+                                        <img src="/images/mtn/seven.png" alt="" className="hidden sm:block max-w-[363px]" />
+                                        <img src="/images/mtn/seven.png" alt="" className="sm:hidden w-[300px]" />
                                     </div>
                                     <div>
                                         <p className="text-[#5A6067] font-semibold leading-7 text-sm">Warning</p>
-                                        <img src="/images/mtn/eight.png" alt="" className="max-w-[363px]" />
+                                        <img src="/images/mtn/eight.png" alt="" className="hidden sm:block max-w-[363px]" />
+                                        <img src="/images/mtn/eight.png" alt="" className="sm:hidden w-[300px]" />
                                     </div>
                                     <div>
                                         <p className="text-[#5A6067] font-semibold leading-7 text-sm">Error</p>
-                                        <img src="/images/mtn/nine.png" alt="" className="max-w-[363px]" />
+                                        <img src="/images/mtn/nine.png" alt="" className="hidden sm:block max-w-[363px]" />
+                                        <img src="/images/mtn/nine.png" alt="" className="sm:hidden w-[300px]" />
                                     </div>
                                 </div>
                             </div>
@@ -89,11 +97,13 @@ const Index = () => {
                                 <div className="flex flex-col gap-10">
                                     <div>
                                         <p className="text-[#191C22] font-semibold leading-7 text-2xl mb-4">Iconography</p>
-                                        <img src="/images/mtn/ten.png" alt="" className="max-w-[575px]" />
+                                        <img src="/images/mtn/ten.png" alt="" className="hidden sm:block max-w-[575px]" />
+                                        <img src="/images/mtn/tenSm.png" alt="" className="sm:hidden w-[300px]" />
                                     </div>
                                     <div>
                                         <p className="text-[#191C22] font-semibold leading-7 text-2xl mb-4">Illustration</p>
-                                        <img src="/images/mtn/eleven.png" alt="" className="max-w-[575px]" />
+                                        <img src="/images/mtn/eleven.png" alt="" className="hidden sm:block max-w-[575px]" />
+                                        <img src="/images/mtn/eleven.png" alt="" className="sm:hidden w-[300px]" />
                                     </div>
                                 </div>
                             </div>

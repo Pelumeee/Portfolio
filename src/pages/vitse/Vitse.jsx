@@ -4,12 +4,12 @@ import Screens from "../../components/Screens";
 
 const Index = () => {
     return (
-        <main className="relative w-full mt-[125px] min-h-[90vh]">
+        <main className="relative w-full md:mt-[125px] mt-[63px] min-h-[90vh]">
             <WorkDetailsHero bgColor="#EDFCF6" title="Designing vitse technology site for insurance businesses" image="/images/vitse/one.png" />
 
             <section className="w-full bg-[#Fff] flex flex-col items-center py-10">
                 <div className="lg:w-[70%] w-[90%]">
-                    <div className="grid grid-cols-2 gap-10 mb-6">
+                    <div className="grid lg:grid-cols-2 grid-cols-1 gap-10 mb-6">
                         <div>
                             <h1 className="text-[#191C22] font-semibold leading-7 text-2xl mb-4">Overview</h1>
                             <p className="text-[#5A6067] font-medium leading-8 text-sm">
@@ -37,11 +37,12 @@ const Index = () => {
 
                     <div className="mb-6">
                         <h1 className="text-[#191C22] font-semibold leading-7 text-2xl mb-4">Style Guide</h1>
-                        <div className="grid grid-cols-2 gap-y-10">
+                        <div className="grid lg:grid-cols-2 grid-cols-1 gap-y-10">
                             <div>
                                 <p className="text-[#5A6067] font-medium leading-8 text-sm mb-4">Colors</p>
                                 <div>
-                                    <img src="/images/vitse/two.png" alt="" className="max-w-[440px] max-h-[252px]" />
+                                    <img src="/images/vitse/two.png" alt="" className="hidden sm:block max-w-[440px] max-h-[252px]" />
+                                    <img src="/images/vitse/twoSm.png" alt="" className="sm:hidden w-[300px] max-h-[252px]" />
                                 </div>
                             </div>
                             <div>
@@ -55,7 +56,7 @@ const Index = () => {
 
                     <div className="mb-6">
                         <h1 className="text-[#191C22] font-semibold leading-7 text-2xl mb-4">Screens</h1>
-                        <div className="grid grid-cols-2 gap-x-14 gap-y-6">
+                        <div className="grid lg:grid-cols-2 grid-cols-1 gap-x-14 gap-y-6">
                             <Screens title="Home" image="/images/vitse/screen1.png" />
                             <Screens title="About" image="/images/vitse/screen2.png" />
                             <Screens title="Vitse Broker" image="/images/vitse/screen3.png" />
@@ -67,7 +68,7 @@ const Index = () => {
             <section className="w-full bg-[#EDFCF6] flex flex-col items-center">
                 <div className="lg:w-[70%] w-[90%] py-10">
                     <h1 className="text-[#191C22] font-semibold leading-7 text-2xl mb-4">More screens...</h1>
-                    <div className="grid grid-cols-3 gap-5">
+                    <div className="grid lg:grid-cols-3 grid-cols-1 gap-5">
                         <div className="">
                             <img src="/images/vitse/more1.png" alt="" className="w-full h-full" />
                         </div>
@@ -91,7 +92,7 @@ const Index = () => {
             </section>
             <section className="w-full bg-[#fff] flex flex-col items-center">
                 <div className="lg:w-[70%] w-[90%] py-24 flex justify-center items-center">
-                    <Button bg="#191C22" color="white" padding="0.7rem 6rem" radius="6px">
+                    <Button bg="#191C22" color="white" padding="0.7rem" radius="6px">
                         View More
                     </Button>
                 </div>

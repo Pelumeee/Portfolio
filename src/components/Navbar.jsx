@@ -76,29 +76,31 @@ const Navbar = () => {
                 </div>
             </nav>
             {showSubMenu && (
-                <div className="relative w-[90%] subMenu">
-                    <div className="w-full md:hidden hiddenn absolute bg-[#fff] top-0 pb-14">
-                        <ul>
-                            <NavLink to={"/home"} className={location.pathname === "/" ? "active" : ""}>
-                                <li className="text-[#87898D] font-medium py-3">Home</li>
-                            </NavLink>
-                            <NavLink to={"/work"}>
-                                <li className="text-[#87898D] font-medium py-3">Work</li>
-                            </NavLink>
-                            <NavLink to={"/about"}>
-                                <li className="text-[#87898D] font-medium py-3">About</li>
-                            </NavLink>
-                        </ul>
-                        <div className="p-4">
-                            <h1 className="text-[#9A9A9A] font-semibold">CONNECT</h1>
-                            <div className="flex flex-col gap-3 p-3">
-                                <div className="flex items-center gap-5">
-                                    <p className="text-[#060607] font-medium leading-7 text-sm underline">Email</p>
-                                    <img src="/images/email.png" alt="" className="w-[24px] md:h-[24px] h-[18px]" />
-                                </div>
-                                <div className="flex items-center gap-5">
-                                    <p className="text-[#060607] font-medium leading-7 text-sm">LinkedIn</p>
-                                    <img src="/images/Linkedin.png" alt="" className="w-[24px] md:h-[24px] h-[20px]" />
+                <div className="relative w-full bg-[#fff] subMenu">
+                    <div className="w-full flex justify-center md:hidden absolute bg-[#fff] top-0 pb-14">
+                        <div className="w-[90%]">
+                            <ul>
+                                <NavLink to={"/home"} className={location.pathname === "/" ? "active" : ""}>
+                                    <li className="text-[#87898D] font-medium py-3">Home</li>
+                                </NavLink>
+                                <NavLink to={"/work"}>
+                                    <li className="text-[#87898D] font-medium py-3">Work</li>
+                                </NavLink>
+                                <NavLink to={"/about"}>
+                                    <li className="text-[#87898D] font-medium py-3">About</li>
+                                </NavLink>
+                            </ul>
+                            <div className="p-4">
+                                <h1 className="text-[#9A9A9A] font-semibold">CONNECT</h1>
+                                <div className="flex flex-col gap-3 p-3">
+                                    <div className="flex items-center gap-5">
+                                        <p className="text-[#060607] font-medium leading-7 text-sm underline">Email</p>
+                                        <img src="/images/email.png" alt="" className="w-[24px] md:h-[24px] h-[18px]" />
+                                    </div>
+                                    <div className="flex items-center gap-5">
+                                        <p className="text-[#060607] font-medium leading-7 text-sm">LinkedIn</p>
+                                        <img src="/images/Linkedin.png" alt="" className="w-[24px] md:h-[24px] h-[20px]" />
+                                    </div>
                                 </div>
                             </div>
                         </div>
