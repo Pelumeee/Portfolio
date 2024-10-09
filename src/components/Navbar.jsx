@@ -1,25 +1,46 @@
 import { NavLink, useLocation } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 
 const Navbar = () => {
     const location = useLocation();
     const [showMenu, setShowMenu] = useState(false);
     const [menuImg, setMenuImg] = useState("/open.svg");
     const [showSubMenu, setShowSubMenu] = useState(false);
+    const subMenuRef = useRef(null);
+    const menuButtonRef = useRef(null);
 
     const handleToggleMenu = () => {
         setShowMenu(!showMenu);
     };
 
     const handleSubMenu = () => {
-        setShowSubMenu(!showSubMenu);
-        if (!showSubMenu) {
-            setMenuImg("/close.svg");
-        } else {
+        setShowSubMenu((prev) => !prev);
+        setMenuImg(showSubMenu ? "/open.svg" : "/close.svg");
+    };
+
+    const handleClickOutside = (e) => {
+        if (subMenuRef.current && !subMenuRef.current.contains(e.target) && !menuButtonRef.current.contains(e.target)) {
+            setShowSubMenu(false);
             setMenuImg("/open.svg");
         }
     };
 
+    useEffect(() => {
+        if (showSubMenu) {
+            document.addEventListener("mousedown", handleClickOutside);
+        } else {
+            document.removeEventListener("mousedown", handleClickOutside);
+        }
+
+        return () => {
+            document.removeEventListener("mousedown", handleClickOutside);
+        };
+    }, [showSubMenu]);
+
+    const closeSubMenu = () => {
+        setShowSubMenu(false);
+        setMenuImg("/open.svg");
+    };
     return (
         <header className="w-full flex flex-col items-center bg-[#fff] border-b border-[#F2F2F2] fixed z-[100]">
             <nav className="relative lg:w-[70%] w-[90%] flex items-center justify-between md:py-8 py-4">
@@ -72,21 +93,26 @@ const Navbar = () => {
                     </div>
                 )}
                 <div className="md:hidden">
-                    <img onClick={handleSubMenu} src={menuImg} alt="" />
+                    <img
+                        onClick={handleSubMenu}
+                        ref={menuButtonRef} // Add ref to the button
+                        src={menuImg}
+                        alt="Menu Icon"
+                    />
                 </div>
             </nav>
             {showSubMenu && (
-                <div className="relative w-full bg-[#fff] subMenu">
+                <div ref={subMenuRef} className="relative w-full bg-[#fff] subMenu">
                     <div className="w-full flex justify-center md:hidden absolute bg-[#fff] top-0 pb-14">
                         <div className="w-[90%]">
                             <ul>
-                                <NavLink to={"/home"} className={location.pathname === "/" ? "active" : ""}>
+                                <NavLink onClick={closeSubMenu} to={"/home"} className={location.pathname === "/" ? "active" : ""}>
                                     <li className="text-[#87898D] font-medium py-3">Home</li>
                                 </NavLink>
-                                <NavLink to={"/work"}>
+                                <NavLink onClick={closeSubMenu} to={"/work"}>
                                     <li className="text-[#87898D] font-medium py-3">Work</li>
                                 </NavLink>
-                                <NavLink to={"/about"}>
+                                <NavLink onClick={closeSubMenu} to={"/about"}>
                                     <li className="text-[#87898D] font-medium py-3">About</li>
                                 </NavLink>
                             </ul>
