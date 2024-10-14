@@ -9,25 +9,29 @@ import Terragon from "./pages/Terragon";
 import MTN from "./pages/MTN";
 import Vitse from "./pages/vitse/Vitse";
 import Cloud from "./pages/Cloud";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
     return (
-        <Routes>
-            <Route path="/" element={<Layout />}>
-                <Route index element={<Home />} />
-                <Route path="home" element={<Home />} />
-                <Route path="work" element={<Work />}>
-                    <Route index element={<CaseStudy />} />
-                    <Route path="case-study" element={<CaseStudy />} />
-                    <Route path="social-media" element={<SocialMedia />} />
+        <>
+            <ScrollToTop />
+            <Routes>
+                <Route path="/" element={<Layout />}>
+                    <Route index element={<Home />} />
+                    <Route path="home" element={<Home />} />
+                    <Route path="work" element={<Work />}>
+                        <Route index element={<CaseStudy />} />
+                        <Route path="case-study" element={<CaseStudy />} />
+                        <Route path="social-media" element={<SocialMedia />} />
+                    </Route>
+                    <Route path="work/terragon" element={<Terragon />} />
+                    <Route path="work/mtn" element={<MTN />} />
+                    <Route path="work/vitse" element={<Vitse />} />
+                    <Route path="work/cloud-marketing" element={<Cloud />} />
+                    <Route path="about" element={<About />} />
                 </Route>
-                <Route path="work/terragon" element={<Terragon />} />
-                <Route path="work/mtn" element={<MTN />} />
-                <Route path="work/vitse" element={<Vitse />} />
-                <Route path="work/cloud-marketing" element={<Cloud />} />
-                <Route path="about" element={<About />} />
-            </Route>
-        </Routes>
+            </Routes>
+        </>
     );
 }
 
